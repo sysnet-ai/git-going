@@ -93,7 +93,7 @@ From the image we can draw a few conclusions:
 
 Remember commits are like checkpoints we can restore from or ‘go to’. So, if someone needed to see the Spanish version, they could jump to commit_5. If they wanted to work on the English version, then they’d go to commit_3.
 
-However, remember that commits usually look like ca82a6dff817ec66f44342007202690a93763949 and those are really hard to remember and keep track. Also, each commit is useful only as it is the newest in a chain. No one would want to work in commit_4, if commit_5 already existed, right?
+However, remember that commits usually look like `ca82a6dff817ec66f44342007202690a93763949` and those are really hard to remember and keep track. Also, each commit is useful only as it is the newest in a chain. No one would want to work in commit_4, if commit_5 already existed, right?
 
 Wouldn’t it be useful if we could give names to the commits? Or to have a way of always track the most recent commit in a chain?  -  Yes, that’d be awesome. And thankfully, that’s exactly what branches are for.
 
