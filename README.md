@@ -30,9 +30,9 @@ Technically speaking, a repository is just a collection of **branches** and **co
 
 Usually when you join a project using git, the first thing you’ll need to do is to **clone** the repository. As the name suggests, you will, literally, create a **local** copy of the repository in your computer.
 
-We’ll get into it later, but for now keep in mind that **local** and **remote** are important concepts for  git. If there’s one thing to remember about this let it be: **local** means it’s happening only in your computer and only you can see it, **remote **means it’s happening in some other computer and everyone can see it. **Remote **is equivalent to the ‘server’ or ‘depot’ in P4 and other Source Control Systems.
+We’ll get into it later, but for now keep in mind that **local** and **remote** are important concepts for  git. If there’s one thing to remember about this let it be: **local** means it’s happening only in your computer and only you can see it, **remote** means it’s happening in some other computer and everyone can see it. **Remote** is equivalent to the ‘server’ or ‘depot’ in P4 and other Source Control Systems.
 
-Now, remember we mentioned **branches** and **commits **make up the repository? Let’s define those:
+Now, remember we mentioned **branches** and **commits** make up the repository? Let’s define those:
 
 **Commits**
 
@@ -42,7 +42,7 @@ Because of this, commits can be thought of as checkpoints: you can go back to th
 
 If there is one thing to know and understand about commits is this: **If it has been committed, it can be recovered. And the opposite is true, if it was never committed, it is probably gone.**
 
-Commits are identified by a unique ‘commit hash’. This is a 40 character-long alphanumeric sequence that looks like: ca82a6dff817ec66f44342007202690a93763949, but don’t worry about that, we’ll see that you’ll rarely even have to think about commit hashes.
+Commits are identified by a unique ‘commit hash’. This is a 40 character-long alphanumeric sequence that looks like: `ca82a6dff817ec66f44342007202690a93763949`, but don’t worry about that, we’ll see that you’ll rarely even have to think about commit hashes.
 
 Git keeps track of every change ever made to the repository from the beginning. It achieves that by using commit hashes.
 
@@ -114,17 +114,17 @@ When the repository is first created, git creates a default branch: ‘master’
 
 Let’s take our example above. Some things that are true in this example and you might want to communicate to other team members:
 
-* **Spanish **was **branched off English**. 
+* **Spanish** was **branched off English**. 
 
-* **Spanish **was **branched off** after **commit_2 **and before **commit_3. **Another way of saying this is that the **most recent common commit **between **English **and **Spanish**, is **commit_2**
+* **Spanish** was **branched off** after **commit_2** and before **commit_3.** Another way of saying this is that the **most recent common commit** between **English** and **Spanish**, is **commit_2**
 
-Every branch is created **from **another branch. And relationships between branches are very important for working with Git and communicating about Git.
+Every branch is created **from** another branch. And relationships between branches are very important for working with Git and communicating about Git.
 
 **Working with branches**
 
-If there’s only one thing you can remember about branches, let it be this: **Branches are sandboxes. **They’re basically like Vegas: whatever happens there, stays there.
+If there’s only one thing you can remember about branches, let it be this: **Branches are sandboxes.** They’re basically like Vegas: whatever happens there, stays there.
 
-If you’re using git, you’ll be in a branch, always*****. When you first clone the repository, you’ll be on a branch - usually master. ( * - There are some advances use cases where this might not be true, but we will ignore those for now)
+If you’re using git, you’ll be in a branch, always*. When you first **clone** the repository, you’ll be on a branch - usually master. (* - There are some advances use cases where this might not be true, but we will ignore those for now)
 
 If you want to ‘go to’ a different branch from the one you’re in, you **checkout** that branch.
 
@@ -132,18 +132,18 @@ Remember we said branches are like sandboxes, so everything you do and everythin
 
 Back to our language example - Imagine you’re a French expert, that will now work to add a French translation to the project.
 
-On your first day you **clone **the project, and you start in the ‘English’ branch, because the team has agreed English is going to be the main version.
+On your first day you **clone** the project, and you start in the ‘English’ branch, because the team has agreed English is going to be the main version.
 
 ![image alt text](image_1.png)
 
-If you wanted to see what’s going on in the Spanish branch, you can just **checkout **the Spanish branch:
+If you wanted to see what’s going on in the Spanish branch, you can just **checkout** the Spanish branch:
 
 `> git checkout Spanish`
 
 And then, you would be ‘over there’:
 ![image alt text](image_2.png)
 
-Now, if you wanted to create your spanking new French branch, you also use **checkout, **except you add -b before the branch name:
+Now, if you wanted to create your spanking new French branch, you also use **checkout**, except you add -b before the branch name:
 
 
 `> git checkout -b French`
@@ -157,7 +157,7 @@ Now, something important to notice is that the branch French, has been **branche
 
 Notice that we’re staring off ‘Hola, Mundo!’ and not ‘Hello, World!’ - because we branched off Spanish, and not English.
 
-Now, remember we mentioned the concepts of **local **and **remote**? At this point, the branch French only exists **locally**. And that means only you can see the branch and the changes in it. To make it available to the rest of the team you need to **push **it**.**
+Now, remember we mentioned the concepts of **local** and **remote**? At this point, the branch French only exists **locally**. And that means only you can see the branch and the changes in it. To make it available to the rest of the team you need to **push it**.
 
 **Pushing and Pulling**
 
@@ -172,19 +172,22 @@ Back to our French branch. To push it and make it available in the **remote**:
 
 `> git push -u origin French`
 
-The *-u* <Branch Name> is necessary only the first time you push from a branch. After that, if you want new commits from your **local **branch to go up to the **remote**, is as simple as just doing: 
+The **-u** <Branch Name> is necessary only the first time you push from a branch. After that, if you want new commits from your **local** branch to go up to the **remote**, is as simple as just doing: 
 
 `> git push`
 
 At this point, French is available to everyone. Imagine someone from the team wants to add some changes to the newly created branch.
 
-First, they would need to **checkout **the branch French.  > git checkout French
+First, they would need to **checkout** the branch French.
+`> git checkout French`
 
-Then, after making their changes, they **commit** them **locally.  **> git commit (more on this later)
+Then, after making their changes, they **commit** them **locally**
+`> git commit (more on this later)`
 
-Afterwards, they **push** their** local **changes to the **remote** workspace.  > git push
+Afterwards, they **push** their **local** changes to the **remote** workspace.
+`> git push`
 
-Now, if you wanted to see the changes from your teammate, you would need to **pull **them from the **remote** to your **local** workspace:
+Now, if you wanted to see the changes from your teammate, you would need to **pull** them from the **remote** to your **local** workspace:
 
 `> git checkout French` (You can omit this step if you are already in the French branch at this point)
 
@@ -202,9 +205,9 @@ As you could probably guess, the command to create a **commit **is, well:
 
 `> git commit`
 
-However, it is a bit more complicated than that. Before you create a **commit** you need to ‘stage it’ (What!? More verbs!? - Yes, unfortunately :/ )
+However, it is a bit more complicated than that. Before you create a **commit** you need to **stage it** (What!? More verbs!? - Yes, unfortunately :/)
 
-While you’re working and changing different files, git sees and tracks all of these changes. However, it lets you pick which ones you want to commit. The act of picking the files you want to **commit **is what is known as ‘staging’.
+While you’re working and changing different files, git sees and tracks all of these changes. However, it lets you pick which ones you want to commit. The act of picking the files you want to **commit** is what is known as **staging**.
 
 **Staging your commit: **
 
