@@ -106,7 +106,7 @@ Back to our example, we could assume this workspace would have 2 branches: Spani
 
 As you can see, ‘ENGLISH’ is  just a nickname for commit_3, and  ‘SPANISH’ is just a nickname to commit_5. The best thing? If our translator decided to add yet another version,  the nickname ‘SPANISH’ would follow. This way, branches give us easy to remember shorthands to commits, as well as keeps up with the latest commit for us.
 
-The most recent commit in a branch is called the **‘HEAD’**. **Commit_3** is the HEAD of the **ENGLISH **branch. **Commit_6** is the HEAD of **SPANISH **branch. 
+The most recent commit in a branch is called the **‘HEAD’**. **Commit_3** is the HEAD of the **ENGLISH** branch. **Commit_6** is the HEAD of **SPANISH** branch. 
 
 When discussing branches, it is important to note that most git repositories will have a branch named **‘master’**.
 
@@ -201,7 +201,7 @@ You go to a branch (**checkout**), get changes other people have made (**pull**)
 
 So far we’ve talked about **commits** repeatedly, but we haven’t gotten into how you create them.
 
-As you could probably guess, the command to create a **commit **is, well:
+As you could probably guess, the command to create a **commit** is, well:
 
 `> git commit`
 
@@ -209,7 +209,7 @@ However, it is a bit more complicated than that. Before you create a **commit** 
 
 While you’re working and changing different files, git sees and tracks all of these changes. However, it lets you pick which ones you want to commit. The act of picking the files you want to **commit** is what is known as **staging**.
 
-**Staging your commit: **
+**Staging your commit:**
 
 (Note: This uses the command line for the whole process, if you’re using a Git client with a GUI the process might be a bit different)
 
