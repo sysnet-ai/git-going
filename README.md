@@ -84,7 +84,7 @@ If you have one commit hash, you can follow its parents and rebuild the state of
 Now, imagine we want to have a localized version of our content. We hire a translator and they get immediately to work. After some time, we end up with something that looks like:
 
 
-![image alt text](image_4.png)
+![image alt text](figures/image_4.png)
 
 From the image we can draw a few conclusions:
 
