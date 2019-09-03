@@ -77,7 +77,7 @@ Commit hashes have all the information about the changes done to the content fro
 
 A visual representation of this would be something like:
 
-![image alt text](image_0.png)
+![image alt text](figures/image_0.png)
 
 If you have one commit hash, you can follow its parents and rebuild the state of the content, from the beginning. This is one of the most powerful characteristics of git.
 
@@ -134,14 +134,14 @@ Back to our language example - Imagine you’re a French expert, that will now w
 
 On your first day you **clone** the project, and you start in the ‘English’ branch, because the team has agreed English is going to be the main version.
 
-![image alt text](image_1.png)
+![image alt text](figures/image_1.png)
 
 If you wanted to see what’s going on in the Spanish branch, you can just **checkout** the Spanish branch:
 
 `> git checkout Spanish`
 
 And then, you would be ‘over there’:
-![image alt text](image_2.png)
+![image alt text](figures/image_2.png)
 
 Now, if you wanted to create your spanking new French branch, you also use **checkout**, except you add -b before the branch name:
 
@@ -151,7 +151,7 @@ Now, if you wanted to create your spanking new French branch, you also use **che
 
 And the result would be:
 
-![image alt text](image_3.png)
+![image alt text](figures/image_3.png)
 
 Now, something important to notice is that the branch French, has been **branched off** the branch Spanish. Why? Well, because we were in the branch Spanish when we typed the checkout command. We took our Spanish sandbox, and all the changes in it up to commit_5, and now we have a new sandbox, and independent sandbox, were we can do our French work.
 
