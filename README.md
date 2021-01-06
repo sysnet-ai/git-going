@@ -14,6 +14,8 @@
 
 * A guide for a specific GUI or application, it mostly focuses on the terms and how the work on the Command Line.
 
+This guide is accompanied by the [examples repository](https://github.com/sysnet-ai/git-going-examples/branches) which matches the repository in the figures along this guide.
+
 **What the.. GIT?**
 
 Git is a Version Control or Source Control System, fancy words apart, is just a tool to keep track of software as it changes over time. Remember all the _final.doc _final_2.doc _final_really_final.doc files you had to create while doing group projects in College? Git basically does that for you, in an automated way and provides tools to move to older versions to recover work as necessary or to newer versions to receive work from your teammates.
@@ -113,7 +115,8 @@ The most recent commit in a branch is called the **‘HEAD’**. **Commit_3** is
 
 When discussing branches, it is important to note that most git repositories will have a branch named **‘master’**.
 
-When the repository is first created, git creates a default branch: ‘master’. Because of this, most teams treat ‘master’ as the main branch, but there’s nothing special about it, it was just the first. There is nothing preventing the team creating a different branch ‘special’ or ‘Thanos’ and treating it as the main one. 
+When the repository is first created, git creates a default branch: ‘master’. Because of this, most teams treat ‘master’ as the main branch, but there’s nothing special about it, it was just the first. There is nothing preventing the team creating a different branch ‘special’ or ‘Thanos’ and treating it as the main one.
+Actually, the [examples repository](https://github.com/sysnet-ai/git-going-examples/branches) uses 'English' as its default branch as you can see.
 
 Let’s take our example above. Some things that are true in this example and you might want to communicate to other team members:
 
