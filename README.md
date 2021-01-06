@@ -231,7 +231,7 @@ The commit is a changes ‘package’, and staging a file is adding it to said �
 
 You can use wildcards as you would with any other command line command to add multiple files with just one command - Examples:
 
-`> git add translations.txt` - This stages the file translations.txt
+`> git add contents.txt` - This stages the file translations.txt
 
 `> git add *.txt` - This stages the files with the .txt extension
 
