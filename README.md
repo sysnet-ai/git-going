@@ -10,7 +10,7 @@
 
 * A comprehensive Git internals explanation
 
-* Written by an expert or anything close, I’m just a semi-proficient user that learn a few tricks.
+* Written by an expert or anything close, I’m just a semi-proficient user that learnt a few tricks.
 
 * A guide for a specific GUI or application, it mostly focuses on the terms and how the work on the Command Line.
 
