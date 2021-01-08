@@ -249,7 +249,7 @@ Commit messages are useful so people know what changes are in each commit. Diffe
 
 
 **Merging and other advanced topics:**
-<Coming soon...>
+Coming soon.
 
 
 
