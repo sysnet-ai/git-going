@@ -247,3 +247,10 @@ After this a text editor (like Notepad or Vim) will appear on your screen so you
 
 Commit messages are useful so people know what changes are in each commit. Different teams might have different rules on what is expected on a commit message. As a rule of thumb a brief explanation of what the changes are trying to accomplish is usually best.
 
+
+**Merging and other advanced topics:**
+<Coming soon...>
+
+
+
+
