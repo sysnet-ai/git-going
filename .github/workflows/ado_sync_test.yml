@@ -12,7 +12,7 @@ jobs:
       - uses: danhellem/github-actions-issue-to-work-item@master
         env:
           ado_token: "${{ secrets.ADO_SECRET }}"
-          github_token: "${{ secrets.GH_ACCESS_TOKEN }}"
+          github_token: "${{ secrets.GH_ACCESSS_TOKEN }}"
           ado_organization: "juhomi"
           ado_project: "Testing how Azure works with GitHub"
           ado_wit: "User Story"
