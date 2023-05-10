@@ -107,11 +107,11 @@ Wouldn’t it be useful if we could give names to the commits? Or to have a way 
 A Branch is just a nickname for a commit. That way we don’t have to remember names that are a bunch of random letters.
 
 Back to our example, we could assume this workspace would have 2 branches: Spanish and English. That’d look like:
-
+![image alt text](figures/image_1.png)
 
 As you can see, ‘ENGLISH’ is  just a nickname for commit_3, and  ‘SPANISH’ is just a nickname to commit_5. The best thing? If our translator decided to add yet another version,  the nickname ‘SPANISH’ would follow. This way, branches give us easy to remember shorthands to commits, as well as keeps up with the latest commit for us.
 
-The most recent commit in a branch is called the **‘HEAD’**. **Commit_3** is the HEAD of the **ENGLISH** branch. **Commit_6** is the HEAD of **SPANISH** branch. 
+The most recent commit in a branch is called the **‘HEAD’**. **Commit_3** is the HEAD of the **ENGLISH** branch. **Commit_5** is the HEAD of **SPANISH** branch. 
 
 When discussing branches, it is important to note that most git repositories will have a branch named **‘master’**.
 
