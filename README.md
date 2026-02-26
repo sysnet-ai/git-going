@@ -1,12 +1,12 @@
 # Let's Git Going
 
-**What this guide is:**
+### **What this guide is:**
 
 * A quick start and cheat sheet
 
 * A place to start when facing Git for the first time
 
-**What this guide isn’t:**
+### **What this guide isn’t:**
 
 * A comprehensive Git internals explanation
 
@@ -16,7 +16,7 @@
 
 This guide is accompanied by the [examples repository](https://github.com/sysnet-ai/git-going-examples/branches) which matches the repository in the figures along this guide.
 
-**What the.. GIT?**
+### **What the.. GIT?**
 
 Git is a Version Control or Source Control System, fancy words apart, is just a tool to keep track of software as it changes over time. Remember all the _final.doc _final_2.doc _final_really_final.doc files you had to create while doing group projects in College? Git basically does that for you, in an automated way and provides tools to move to older versions to recover work as necessary or to newer versions to receive work from your teammates.
 
@@ -24,7 +24,7 @@ Whether you’re coming to Git as a user of other source control systems, or are
 
 So let’s git going (hehe) with some of the basics.
 
-**Repository**
+### **Repository**
 
 A repository (or ‘repo’ as the cool kids call it) is the project itself. Think of it as the container of *everything* related to your project.
 
@@ -36,7 +36,7 @@ We’ll get into it later, but for now keep in mind that **local** and **remote*
 
 Now, remember we mentioned **branches** and **commits** make up the repository? Let’s define those:
 
-**Commits**
+### **Commits**
 
 A commit is a snapshot of the repository at a point in time.
 
@@ -102,7 +102,7 @@ However, remember that commits usually look like `ca82a6dff817ec66f4434200720269
 
 Wouldn’t it be useful if we could give names to the commits? Or to have a way of always track the most recent commit in a chain?  -  Yes, that’d be awesome. And thankfully, that’s exactly what branches are for.
 
-**Branches**
+### **Branches**
 
 A Branch is just a nickname for a commit. That way we don’t have to remember names that are a bunch of random letters.
 
@@ -203,7 +203,7 @@ These steps represent the basic workflow in git:
 
 You go to a branch (**switch**), get changes other people have made (**pull**), add your own changes (**stage & commit**), and make them available to the rest of the team (**push**). 
 
-**Committing**
+### **Committing**
 
 So far we’ve talked about **commits** repeatedly, but we haven’t gotten into how you create them.
 
@@ -215,7 +215,7 @@ However, it is a bit more complicated than that. Before you create a **commit** 
 
 While you’re working and changing different files, git sees and tracks all of these changes. However, it lets you pick which ones you want to commit. The act of picking the files you want to **commit** is what is known as **staging**.
 
-**Staging your commit:**
+#### **Staging your commit:**
 
 (Note: This uses the command line for the whole process, if you’re using a Git client with a GUI the process might be a bit different)
 
@@ -248,9 +248,14 @@ After this a text editor (like Notepad or Vim) will appear on your screen so you
 Commit messages are useful so people know what changes are in each commit. Different teams might have different rules on what is expected on a commit message. As a rule of thumb a brief explanation of what the changes are trying to accomplish is usually best.
 
 
-**Merging and other advanced topics:**
-Coming soon.
+### **Merging**
 
+Bring 2 branches together is known as merging. When **merging** two branches, all the commits that exist in one branch (usually called the *source* branch) are applied to the **target** branch. Most of the time, git will automatically manage this combination.
+However, if the commits of one branch are incompatible with the commits of the other branch, a **conflict** arises. Commits can be considered incompatible when those commits changed the same file and around the same areas in such a way that it isn't clear which is the desired final state.
+Git will usually call for the user to solve these.
+
+### **Cherry-Picking**
+**Cherry-Picking** is the act of grabbing a commit, or set of commits, from one branch and bringing them into another branch. You can think of it as a "partial merge".
 
 
 
