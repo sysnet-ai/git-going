@@ -201,7 +201,7 @@ Now, if you wanted to see the changes from your teammate, you would need to **pu
 
 These steps represent the basic workflow in git:
 
-You go to a branch (**switch**), get changes other people have made (**pull**), add your own changes (**commit)**, and make them available to the rest of the team (**push**). 
+You go to a branch (**switch**), get changes other people have made (**pull**), add your own changes (**stage & commit**), and make them available to the rest of the team (**push**). 
 
 **Committing**
 
