@@ -132,7 +132,7 @@ If there’s only one thing you can remember about branches, let it be this: **B
 
 If you’re using git, you’ll be in a branch, always*. When you first **clone** the repository, you’ll be on a branch - usually master. (* - There are some advances use cases where this might not be true, but we will ignore those for now)
 
-If you want to ‘go to’ a different branch from the one you’re in, you **checkout** that branch.
+If you want to ‘go to’ a different branch from the one you’re in, you **switch** to that branch.
 
 Remember we said branches are like sandboxes, so everything you do and everything you can see is going to be defined by the current branch you’re on.
 
@@ -142,24 +142,24 @@ On your first day you **clone** the project, and you start in the ‘English’ 
 
 ![image alt text](figures/image_1.png)
 
-If you wanted to see what’s going on in the Spanish branch, you can just **checkout** the Spanish branch:
+If you wanted to see what’s going on in the Spanish branch, you can just **switch** to the Spanish branch:
 
-`> git checkout Spanish`
+`> git switch Spanish`
 
 And then, you would be ‘over there’:
 ![image alt text](figures/image_2.png)
 
-Now, if you wanted to create your spanking new French branch, you also use **checkout**, except you add -b before the branch name:
+Now, if you wanted to create your spanking new French branch, you also use **switch**, except you add -c before the branch name (for Create):
 
 
-`> git checkout -b French`
+`> git switch -c French`
 
 
 And the result would be:
 
 ![image alt text](figures/image_3.png)
 
-Now, something important to notice is that the branch French, has been **branched off** the branch Spanish. Why? Well, because we were in the branch Spanish when we typed the checkout command. We took our Spanish sandbox, and all the changes in it up to commit_5, and now we have a new sandbox, and independent sandbox, were we can do our French work.
+Now, something important to notice is that the branch French, has been **branched off** the branch Spanish. Why? Well, because we were in the branch Spanish when we typed the switch command. We took our Spanish sandbox, and all the changes in it up to commit_5, and now we have a new sandbox, and independent sandbox, were we can do our French work.
 
 Notice that we’re staring off ‘Hola, Mundo!’ and not ‘Hello, World!’ - because we branched off Spanish, and not English.
 
@@ -184,8 +184,8 @@ The **-u** <Branch Name> is necessary only the first time you push from a branch
 
 At this point, French is available to everyone. Imagine someone from the team wants to add some changes to the newly created branch.
 
-First, they would need to **checkout** the branch French.
-`> git checkout French`
+First, they would need to **switch** to the branch French.
+`> git switch French`
 
 Then, after making their changes, they **commit** them **locally**
 `> git commit (more on this later)`
@@ -195,13 +195,13 @@ Afterwards, they **push** their **local** changes to the **remote** workspace.
 
 Now, if you wanted to see the changes from your teammate, you would need to **pull** them from the **remote** to your **local** workspace:
 
-`> git checkout French` (You can omit this step if you are already in the French branch at this point)
+`> git switch French` (You can omit this step if you are already in the French branch at this point)
 
 `> git pull`
 
 These steps represent the basic workflow in git:
 
-You go to a branch (**checkout**), get changes other people have made (**pull**), add your own changes (**commit)**, and make them available to the rest of the team (**push**). 
+You go to a branch (**switch**), get changes other people have made (**pull**), add your own changes (**commit)**, and make them available to the rest of the team (**push**). 
 
 **Committing**
 
